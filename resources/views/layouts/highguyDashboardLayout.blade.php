@@ -74,9 +74,9 @@
             align-items: center;
             justify-content: space-between;
             gap: 1rem;
-            padding: 0.25rem 0 1.1rem;
+            padding: 0.4rem 0 1.1rem;
             margin-bottom: 1.2rem;
-            border-bottom: 1px solid rgba(35, 44, 58, 0.14);
+            border-bottom: 1px solid rgba(var(--color-primary-500-rgb), 0.18);
         }
         .dashboard-shared-page-header__content {
             min-width: 0;
@@ -89,19 +89,36 @@
             gap: 0.75rem;
             flex-shrink: 0;
         }
-        .dashboard-shared-page-header__title {
+        .officer-shared-page-header__title {
             margin: 0;
-            font-size: clamp(1.35rem, 1.5vw, 1.8rem);
-            line-height: 1.2;
-            font-weight: 700;
+            font-size: clamp(0.98rem, 1.2vw, 1.2rem);
+            line-height: 1.25;
+            font-weight: 500;
             color: var(--color-slate-600);
+            letter-spacing: 0.01em;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.55rem;
         }
-        .dashboard-shared-page-header__subtitle {
-            max-width: 720px;
-            margin: 0.35rem 0 0;
+        .officer-shared-page-header__title::before {
+            content: "";
+            width: 9px;
+            height: 9px;
+            border-radius: 999px;
+            background: var(--color-primary-400);
+            box-shadow: 0 0 0 3px rgba(var(--color-primary-500-rgb), 0.12);
+            flex-shrink: 0;
+        }
+        .officer-shared-page-header__subtitle {
+            max-width: 760px;
+            margin: 0.45rem 0 0;
             color: var(--color-slate-500);
-            font-size: 0.95rem;
-            line-height: 1.6;
+            font-size: 0.8rem;
+            line-height: 1.55;
+            background: rgba(var(--color-primary-500-rgb), 0.05);
+            border: 1px solid rgba(var(--color-primary-500-rgb), 0.12);
+            border-radius: 12px;
+            padding: 0.38rem 0.65rem;
         }
         .dashboard-page-content[data-dashboard-page-header="true"] .dashboard-page-body > .container:first-child > :is(h1, h2, h3, h4):first-child {
             display: none !important;
@@ -116,8 +133,9 @@
                 justify-content: flex-start;
                 flex-wrap: wrap;
             }
-            .dashboard-shared-page-header__subtitle {
-                font-size: 0.92rem;
+            .officer-shared-page-header__subtitle {
+                font-size: 0.78rem;
+                padding: 0.36rem 0.6rem;
             }
         }
     </style>

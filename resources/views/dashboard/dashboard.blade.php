@@ -51,8 +51,8 @@
         <div class="col-lg-8">
             <section class="dashboard-panel h-100 p-5 text-center">
                  <div class="py-5">
-                    <x-laravel-logo style="width: 80px; color: #FF2D20;" class="mb-4" />
-                    <h2 class="fw-bold">Welcome to your new Dashboard</h2>
+                    <x-laravel-logo class="mb-4 dashboard-welcome-logo" />
+                    <h2 class="fw-semibold dashboard-welcome-title">Welcome to your new Dashboard</h2>
                     <p class="text-muted mx-auto mb-4" style="max-width: 500px;">
                         This is the HighGuy Starter Kit dashboard. You can now start adding your own modules, charts, and data tables here.
                     </p>
@@ -65,7 +65,7 @@
         </div>
         <div class="col-lg-4">
             <section class="dashboard-panel h-100">
-                 <h4 class="fw-bold mb-4">Recent Activity</h4>
+                 <h4 class="fw-semibold mb-4 dashboard-activity-title">Recent Activity</h4>
                  <div class="list-group list-group-flush">
                     <div class="list-group-item px-0 border-0 mb-3">
                         <div class="d-flex gap-3">
@@ -110,15 +110,16 @@
 @push('styles')
 <style>
     .dashboard-page {
-        color: #232c3a;
+        color: var(--color-dark-800);
+        font-size: 0.95rem;
     }
 
     .dashboard-stat-card,
     .dashboard-panel,
     .dashboard-summary-tile {
-        background: #fff;
-        border: 1px solid rgba(35, 44, 58, 0.1);
-        box-shadow: 0 16px 40px rgba(27, 34, 48, 0.07);
+        background: var(--color-white);
+        border: 1px solid rgba(var(--color-dark-800-rgb), 0.1);
+        box-shadow: 0 16px 40px rgba(var(--color-dark-900-rgb), 0.07);
     }
 
     .dashboard-stat-card,
@@ -135,30 +136,30 @@
         display: flex;
         align-items: center;
         gap: 1rem;
-        min-height: 138px;
+        min-height: 124px;
         padding: 1.25rem 1.35rem;
         overflow: hidden;
         position: relative;
     }
 
     .dashboard-stat-card--blue {
-        color: #1e5eff;
-        background: linear-gradient(180deg, rgba(30, 94, 255, 0.08), #fff);
+        color: var(--color-primary-600);
+        background: linear-gradient(180deg, rgba(var(--color-primary-500-rgb), 0.1), var(--color-white));
     }
 
     .dashboard-stat-card--slate {
-        color: #475569;
-        background: linear-gradient(180deg, rgba(71, 85, 105, 0.08), #fff);
+        color: var(--color-slate-600);
+        background: linear-gradient(180deg, rgba(var(--color-dark-800-rgb), 0.08), var(--color-white));
     }
 
     .dashboard-stat-card--teal {
-        color: #0f766e;
-        background: linear-gradient(180deg, rgba(15, 118, 110, 0.08), #fff);
+        color: var(--color-success-700);
+        background: linear-gradient(180deg, rgba(var(--color-success-500-rgb), 0.1), var(--color-white));
     }
 
     .dashboard-stat-card--amber {
-        color: #b45309;
-        background: linear-gradient(180deg, rgba(180, 83, 9, 0.08), #fff);
+        color: var(--color-warning-700);
+        background: linear-gradient(180deg, rgba(var(--color-warning-500-rgb), 0.12), var(--color-white));
     }
 
     .dashboard-stat-card__icon,
@@ -170,7 +171,7 @@
         justify-content: center;
         border-radius: 18px;
         background: rgba(255, 255, 255, 0.76);
-        border: 1px solid rgba(35, 44, 58, 0.08);
+        border: 1px solid rgba(var(--color-dark-800-rgb), 0.08);
         font-size: 1.35rem;
         flex-shrink: 0;
     }
@@ -182,13 +183,13 @@
         font-size: 0.72rem;
         letter-spacing: 0.08em;
         text-transform: uppercase;
-        color: #667085;
+        color: var(--color-slate-500);
     }
 
     .dashboard-stat-card__value {
         margin: 0.25rem 0 0;
-        font-size: clamp(1.65rem, 2vw, 2.1rem);
-        color: #232c3a;
+        font-size: clamp(1.35rem, 1.8vw, 1.75rem);
+        color: var(--color-dark-800);
     }
 
     .dashboard-panel__header {
@@ -201,9 +202,9 @@
 
     .dashboard-panel__title {
         margin: 0.25rem 0 0;
-        font-size: 1.2rem;
+        font-size: clamp(1rem, 1.2vw, 1.15rem);
         font-weight: 700;
-        color: #232c3a;
+        color: var(--color-dark-800);
     }
 
     .dashboard-summary-tile {
@@ -215,9 +216,37 @@
     }
 
     .dashboard-summary-tile__value {
-        font-size: 1.5rem;
+        font-size: clamp(1.15rem, 1.4vw, 1.35rem);
         font-weight: 700;
-        color: #232c3a;
+        color: var(--color-dark-800);
+    }
+
+    .dashboard-welcome-logo {
+        width: 80px;
+        color: var(--color-danger-500);
+    }
+
+    .dashboard-welcome-title {
+        font-size: clamp(1.2rem, 1.8vw, 1.55rem);
+        line-height: 1.3;
+        color: var(--color-dark-800);
+    }
+
+    .dashboard-activity-title {
+        font-size: clamp(1rem, 1.4vw, 1.2rem);
+        line-height: 1.3;
+        color: var(--color-dark-800);
+    }
+
+    @media (max-width: 768px) {
+        .dashboard-panel {
+            border-radius: 22px;
+            padding: 1rem;
+        }
+
+        .dashboard-summary-tile {
+            padding: 1rem;
+        }
     }
 </style>
 @endpush

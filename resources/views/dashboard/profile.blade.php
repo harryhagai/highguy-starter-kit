@@ -33,7 +33,7 @@
                 <div class="profile-section-head">
                     <div>
                         <div class="profile-section-kicker">Account Overview</div>
-                        <h3 class="profile-section-title">Personal Information</h3>
+                        <h3 class="profile-section-title fw-semibold">Personal Information</h3>
                     </div>
                 </div>
 
@@ -75,7 +75,7 @@
                 <div class="modal-header border-0 pb-0">
                     <div>
                         <div class="profile-section-kicker">Edit Profile</div>
-                        <h4 class="modal-title profile-modal-title" id="profileUpdateModalLabel">Update your details</h4>
+                        <h4 class="modal-title profile-modal-title fw-semibold" id="profileUpdateModalLabel">Update your details</h4>
                     </div>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
@@ -159,17 +159,17 @@
 @push('styles')
 <style>
     .dashboard-profile-page {
-        color: #232c3a;
+        color: var(--color-dark-800);
         font-size: 0.95rem;
     }
 
     .profile-summary-card,
     .profile-details-card {
-        background: #ffffff;
-        border: 1px solid rgba(35, 44, 58, 0.12);
+        background: var(--color-white);
+        border: 1px solid rgba(var(--color-dark-800-rgb), 0.12);
         border-radius: 24px;
         padding: 1.6rem;
-        box-shadow: 0 16px 40px rgba(27, 34, 48, 0.08);
+        box-shadow: 0 16px 40px rgba(var(--color-dark-900-rgb), 0.08);
     }
 
     .profile-summary-card {
@@ -178,7 +178,7 @@
         justify-content: space-between;
         gap: 1.25rem;
         min-height: 100%;
-        background: linear-gradient(180deg, rgba(35, 44, 58, 0.05) 0%, #ffffff 100%);
+        background: linear-gradient(180deg, rgba(var(--color-primary-500-rgb), 0.08) 0%, var(--color-white) 100%);
     }
 
     .profile-summary-top {
@@ -195,10 +195,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background: linear-gradient(135deg, #232c3a, #1b2230);
+        background: linear-gradient(135deg, var(--color-primary-600), var(--color-primary-700));
         border: 2px solid rgba(255, 255, 255, 0.92);
-        color: #fff;
-        box-shadow: 0 10px 24px rgba(27, 34, 48, 0.22);
+        color: var(--color-white);
+        box-shadow: 0 10px 24px rgba(var(--color-dark-900-rgb), 0.22);
     }
 
     .profile-avatar-icon {
@@ -211,28 +211,28 @@
         gap: 0.45rem;
         padding: 0.35rem 0.8rem;
         border-radius: 999px;
-        background: rgba(35, 44, 58, 0.08);
-        color: #1b2230;
+        background: rgba(var(--color-primary-500-rgb), 0.1);
+        color: var(--color-primary-700);
         font-size: 0.72rem;
         margin-bottom: 0.75rem;
-        border: 1px solid rgba(35, 44, 58, 0.12);
+        border: 1px solid rgba(var(--color-primary-500-rgb), 0.16);
     }
 
     .profile-name {
         margin: 0;
-        font-size: 1.12rem;
+        font-size: clamp(1rem, 1.2vw, 1.18rem);
         font-weight: 600;
     }
 
     .profile-email {
         margin: 0.35rem 0 0;
-        color: #5d6675;
+        color: var(--color-slate-500);
         font-size: 0.88rem;
     }
 
     .profile-info-card {
-        background: rgba(35, 44, 58, 0.04);
-        border: 1px solid rgba(35, 44, 58, 0.1);
+        background: rgba(var(--color-primary-500-rgb), 0.05);
+        border: 1px solid rgba(var(--color-primary-500-rgb), 0.12);
         border-radius: 18px;
         padding: 1rem 1.05rem;
     }
@@ -241,39 +241,59 @@
         display: block;
         font-size: 0.7rem;
         text-transform: uppercase;
-        color: #6b7280;
+        color: var(--color-slate-500);
         margin-bottom: 0.4rem;
     }
 
     .profile-info-value {
-        color: #232c3a;
-        font-size: 0.88rem;
+        color: var(--color-dark-800);
+        font-size: 0.84rem;
         font-weight: 500;
     }
 
     .profile-edit-btn {
-        background: #232c3a;
-        border-color: #232c3a;
+        background: var(--color-primary-600);
+        border-color: var(--color-primary-600);
         border-radius: 16px;
         padding: 0.7rem 0.95rem;
         width: 100%;
     }
 
     .profile-edit-btn:hover {
-        background: #1b2230;
+        background: var(--color-primary-700);
+        border-color: var(--color-primary-700);
     }
 
     .profile-section-kicker {
         font-size: 0.68rem;
         text-transform: uppercase;
-        color: #232c3a;
+        color: var(--color-primary-700);
         margin-bottom: 0.35rem;
     }
 
     .profile-section-title {
         margin: 0;
         font-weight: 700;
-        font-size: 1.1rem;
+        font-size: clamp(1rem, 1.2vw, 1.12rem);
+    }
+
+    .profile-modal-title {
+        font-size: clamp(1rem, 1.15vw, 1.12rem);
+        color: var(--color-dark-800);
+    }
+
+    @media (max-width: 768px) {
+        .profile-summary-card,
+        .profile-details-card {
+            border-radius: 20px;
+            padding: 1.2rem;
+        }
+
+        .profile-avatar-fallback {
+            width: 72px;
+            height: 72px;
+            border-radius: 20px;
+        }
     }
 
     .profile-modal {
