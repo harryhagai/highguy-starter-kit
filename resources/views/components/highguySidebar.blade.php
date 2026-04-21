@@ -47,13 +47,13 @@
     }
 
     .highguy-sidebar .nav-link:hover {
-        background: rgba(59, 130, 246, 0.05);
-        color: #3b82f6;
+        background: rgba(var(--color-primary-500-rgb), 0.08);
+        color: var(--color-primary-500);
     }
 
     .highguy-sidebar .nav-link.active {
-        background: #3b82f6;
-        color: #fff;
-        box-shadow: 0 8px 16px rgba(59, 130, 246, 0.2);
+        background: var(--color-primary-500);
+        color: var(--color-white);
+        box-shadow: 0 8px 16px rgba(var(--color-primary-500-rgb), 0.2);
     }
 </style>

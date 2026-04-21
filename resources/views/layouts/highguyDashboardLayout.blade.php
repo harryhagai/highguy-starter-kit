@@ -9,6 +9,7 @@
     <link rel="icon" type="image/svg+xml" href="{{ asset('img/favicon.svg') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="{{ asset('css/rootcolor.css') }}" rel="stylesheet">
     <link href="{{ asset('css/highguyHeader.css') }}" rel="stylesheet">
     <link href="{{ asset('css/highguySidebar.css') }}" rel="stylesheet">
     <link href="{{ asset('css/highguyLayout.css') }}" rel="stylesheet">
@@ -93,12 +94,12 @@
             font-size: clamp(1.35rem, 1.5vw, 1.8rem);
             line-height: 1.2;
             font-weight: 700;
-            color: #232c3a;
+            color: var(--color-slate-600);
         }
         .dashboard-shared-page-header__subtitle {
             max-width: 720px;
             margin: 0.35rem 0 0;
-            color: #4f5a6b;
+            color: var(--color-slate-500);
             font-size: 0.95rem;
             line-height: 1.6;
         }
