@@ -1606,9 +1606,17 @@
     font-weight: 800;
 }
 
+.auth-login-copy p {
+    color: rgba(255, 255, 255, 0.94);
+}
+
 .auth-login-guide {
     max-width: 380px;
     margin-top: 0.15rem;
+}
+
+.auth-login-guide h3 {
+    color: #ffffff;
 }
 
 .auth-login-guide ul {
@@ -1620,7 +1628,7 @@
     position: relative;
     padding-left: 1rem;
     margin-bottom: 0.7rem;
-    color: rgba(237, 242, 247, 0.92);
+    color: rgba(255, 255, 255, 0.95);
     font-size: 0.93rem;
     line-height: 1.55;
 }

@@ -8,7 +8,7 @@
             <div class="auth-login-shell">
                 <aside class="auth-login-brand-panel">
                     <a href="{{ route('home') }}" class="auth-login-brand">
-                        <i class="bi bi-cone-striped auth-login-brand-icon" aria-hidden="true"></i>
+                        <img src="{{ asset('img/logo.png') }}" alt="Logo" class="auth-login-brand-icon">
                         <span>
                             <strong>HighGuy Starter Kit</strong>
                             <small>Authorized officer portal</small>
@@ -69,7 +69,7 @@
                             <div class="auth-login-back-wrap">
                                 <a href="{{ route('login') }}" class="auth-login-back-link">
                                     <i class="bi bi-arrow-left"></i>
-                                    <span>Back to Officer Login</span>
+                                    <span>Back to  Login</span>
                                 </a>
                             </div>
                         </form>
