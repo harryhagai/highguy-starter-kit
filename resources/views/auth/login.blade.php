@@ -1,4 +1,4 @@
-@extends('layouts.auth')
+﻿@extends('layouts.auth')
 
 @section('title', 'Login')
 
@@ -10,7 +10,7 @@
                     <a href="{{ route('home') }}" class="auth-login-brand">
                         <img src="{{ asset('img/logo.png') }}" alt="Logo" class="auth-login-brand-icon" style="width: 38px; height: 38px; border-radius: 8px; margin-right: 12px;">
                         <span>
-                            <strong>HighGuy Starter Kit</strong>
+                            <strong>HighGuy_37 Starter Kit</strong>
                             <small>Student Friendly Portal</small>
                         </span>
                     </a>

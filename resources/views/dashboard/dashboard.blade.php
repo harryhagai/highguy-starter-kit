@@ -1,4 +1,4 @@
-@extends('layouts.highguyDashboardLayout')
+﻿@extends('layouts.HighGuy_37DashboardLayout')
 
 @section('content')
 <div class="container-fluid px-3 px-lg-4 py-4 dashboard-page">

@@ -1,6 +1,6 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
-@section('title', 'About HighGuy Starter Kit')
+@section('title', 'About HighGuy_37 Starter Kit')
 
 @push('critical-head')
     <link rel="stylesheet" href="{{ asset('css/about.css') }}">
@@ -12,10 +12,10 @@
             <div class="row g-4 align-items-stretch mb-4">
                 <div class="col-lg-7">
                     <div class="about-hero-card h-100">
-                        <span class="about-kicker"><i class="bi bi-stars"></i> About HighGuy</span>
+                        <span class="about-kicker"><i class="bi bi-stars"></i> About HighGuy_37</span>
                         <h1 class="about-title">A practical Laravel starter kit for modern student and team projects.</h1>
                         <p class="about-copy">
-                            HighGuy Starter Kit is designed to help developers launch faster with a clean foundation, ready authentication, and a
+                            HighGuy_37 Starter Kit is designed to help developers launch faster with a clean foundation, ready authentication, and a
                             dashboard structure that follows real-world project patterns.
                         </p>
                         <ul class="about-list">

@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>@yield('title', 'HighGuy Starter Kit')</title>
+    <title>@yield('title', 'HighGuy_37 Starter Kit')</title>
     <link rel="icon" type="image/svg+xml" href="{{ asset('img/favicon.svg') }}">
 
     <!-- Bootstrap 5 CSS -->

@@ -1,43 +1,6 @@
-<<<<<<< HEAD
-Road Safety Project License
-
-Copyright (c) 2026 HAGAI HAROLD NGOBEY
-Registration Number: NIT/BIT/2023/2185
-Program: BIT
-Institution: National Institute of Transport
-Faculty: Faculty of Information Technology and Education
-Department: Department of Computing and Communication Technology
-Project Title: Development of Confidential Web Portal for Road Safety Reporting with Geospatial Mapping
-
-All rights reserved.
-
-This software project and its documentation were developed as an academic project. The work focuses on the use of web and geospatial technologies for confidential road safety reporting and administrative road safety management.
-
-Primary technologies used in this project include:
-- PHP
-- Laravel
-- MySQL
-- Bootstrap
-- JavaScript
-- HTML
-- CSS
-- Google Maps API
-
-Permission is not granted to copy, modify, distribute, publish, sublicense, or use substantial portions of this project for commercial purposes without prior written permission from the author.
-
-Permission may be granted for academic reference, learning, review, or supervised educational assessment, provided that proper credit is given to the author.
-
-This project is provided "as is", without warranty of any kind, express or implied, including but not limited to fitness for a particular purpose, security, or noninfringement.
-
-For ownership, academic reference, or reuse requests, credit must be given to:
-
-HAGAI HAROLD NGOBEY
-NIT/BIT/2023/2185
-National Institute of Transport
-=======
 MIT License
 
-Copyright (c) 2026 HAGAI HAROLD NGOBEY
+Copyright (c) 2026
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -56,4 +19,8 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
->>>>>>> 7692e05f5aa9991d3b50928bc199625942b4d1aa
+
+For more contact:
+Developer: HAGAI HAROLD NGOBEY
+Phone: +255 765384905
+Email: hngobey@gmail.com

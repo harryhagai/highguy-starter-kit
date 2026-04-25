@@ -1,9 +1,9 @@
-@php
+﻿@php
     $isAdministrationMenuOpen = request()->is('dashboard/profile*') || request()->is('dashboard/settings*');
     $isMonitoringMenuOpen = request()->is('dashboard/notifications*');
 @endphp
 
-<aside id="sidebar" class="highguy-sidebar">
+<aside id="sidebar" class="HighGuy_37-sidebar">
     <div class="p-3 officer-sidebar-inner">
         <div class="officer-sidebar-brand mb-4">
             <div class="officer-sidebar-logo" aria-hidden="true">
@@ -11,7 +11,7 @@
                     style="width: 32px; height: 32px; border-radius: 6px;">
             </div>
             <div class="officer-sidebar-brand-text">
-                <div class="officer-sidebar-brand-title">HighGuy</div>
+                <div class="officer-sidebar-brand-title">HighGuy_37</div>
                 <div class="officer-sidebar-brand-subtitle">Starter Kit</div>
             </div>
         </div>
@@ -32,13 +32,13 @@
 
 
             <div class="officer-sidebar-footer">
-                <div class="officer-sidebar-footer__copy">&copy; 2025 HighGuy Kit</div>
+                <div class="officer-sidebar-footer__copy">&copy; 2025 HighGuy_37 Kit</div>
             </div>
     </div>
 </aside>
 
 <style>
-    .highguy-sidebar .nav-link {
+    .HighGuy_37-sidebar .nav-link {
         border-radius: 12px;
         margin-bottom: 4px;
         padding: 10px 16px;
@@ -46,12 +46,12 @@
         transition: all 0.2s ease;
     }
 
-    .highguy-sidebar .nav-link:hover {
+    .HighGuy_37-sidebar .nav-link:hover {
         background: rgba(var(--color-primary-500-rgb), 0.08);
         color: var(--color-primary-500);
     }
 
-    .highguy-sidebar .nav-link.active {
+    .HighGuy_37-sidebar .nav-link.active {
         background: var(--color-primary-500);
         color: var(--color-white);
         box-shadow: 0 8px 16px rgba(var(--color-primary-500-rgb), 0.2);

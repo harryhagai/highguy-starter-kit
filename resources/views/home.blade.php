@@ -1,6 +1,6 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
-@section('title', 'HighGuy - Simple Laravel Starter Kit')
+@section('title', 'HighGuy_37 - Simple Laravel Starter Kit')
 
 @push('critical-head')
     <style>
@@ -92,7 +92,7 @@
         <div class="container text-center text-lg-start">
             <div class="row align-items-center">
                 <div class="col-lg-7">
-                    <h1 class="display-3 fw-bold mb-4">Master Laravel with <span class="text-primary">HighGuy</span></h1>
+                    <h1 class="display-3 fw-bold mb-4">Master Laravel with <span class="text-primary">HighGuy_37</span></h1>
                     <p class="lead text-muted mb-5" style="max-width: 600px;">
                         A beginner-friendly starter kit designed for students and developers to jumpstart their real-world
                         web applications. Built with Laravel, Bootstrap, and Best Practices.

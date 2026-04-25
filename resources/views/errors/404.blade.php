@@ -28,12 +28,6 @@
                 'icon' => 'bi-arrow-left',
                 'variant' => 'primary',
             ],
-            [
-                'href' => route('developer'),
-                'label' => 'Contact Developer',
-                'icon' => 'bi-code-slash',
-                'variant' => 'secondary',
-            ],
         ],
     ])
 @endsection
