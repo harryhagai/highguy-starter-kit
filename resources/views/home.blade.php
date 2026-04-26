@@ -61,6 +61,53 @@
             font-size: 1.1rem;
         }
 
+        .hero-feature-item {
+            width: 100%;
+            padding: 12px;
+            border-radius: 14px;
+            border: 1px solid transparent;
+            background: transparent;
+            transition: all 0.25s ease;
+            cursor: pointer;
+        }
+
+        .hero-feature-item:hover,
+        .hero-feature-item:focus-within {
+            background: #eff6ff;
+            border-color: #bfdbfe;
+            transform: translateX(8px);
+            box-shadow: 0 14px 28px rgba(37, 99, 235, 0.14);
+        }
+
+        .hero-feature-item:hover {
+            background: #eff6ff;
+            border-color: #bfdbfe;
+            transform: translateX(8px);
+            box-shadow: 0 14px 28px rgba(37, 99, 235, 0.14);
+        }
+
+        .hero-feature-item .feature-item-icon {
+            background: #dbeafe;
+            color: #2563eb;
+            transition: all 0.25s ease;
+        }
+
+        .hero-feature-item:hover .feature-item-icon,
+        .hero-feature-item:focus-within .feature-item-icon {
+            background: #2563eb;
+            color: #ffffff;
+            transform: scale(1.08);
+        }
+
+        .hero-feature-item span {
+            transition: color 0.25s ease;
+        }
+
+        .hero-feature-item:hover span,
+        .hero-feature-item:focus-within span {
+            color: #2563eb;
+        }
+
         .btn-premium {
             padding: 16px 32px;
             border-radius: 12px;
@@ -124,6 +171,22 @@
             font-weight: 700;
             margin-bottom: 14px;
         }
+
+        .hero-logo-card {
+            min-height: 360px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .hero-logo-card img {
+            width: 100%;
+            max-width: 360px;
+            height: auto;
+            object-fit: contain;
+            display: block;
+        }
     </style>
 @endpush
 
@@ -151,35 +214,13 @@
                         <div class="tech-pill">Bootstrap 5</div>
                         <div class="tech-pill">MySQL</div>
                         <div class="tech-pill">Blade</div>
-                        <div class="tech-pill">Vite</div>
                     </div>
                 </div>
                 <div class="col-lg-5 d-none d-lg-block">
-                    <div class="p-5 bg-white rounded-4 shadow-sm border">
-                        <div class="d-flex align-items-center gap-3 mb-4">
-                            <div class="feature-item-icon bg-primary bg-opacity-10 text-primary">
-                                <i class="bi bi-check2"></i>
-                            </div>
-                            <span class="fw-semibold">Auth System Included</span>
-                        </div>
-                        <div class="d-flex align-items-center gap-3 mb-4">
-                            <div class="feature-item-icon bg-primary bg-opacity-10 text-primary">
-                                <i class="bi bi-layout-sidebar-inset"></i>
-                            </div>
-                            <span class="fw-semibold">Modern Dashboard UI</span>
-                        </div>
-                        <div class="d-flex align-items-center gap-3 mb-4">
-                            <div class="feature-item-icon bg-primary bg-opacity-10 text-primary">
-                                <i class="bi bi-phone"></i>
-                            </div>
-                            <span class="fw-semibold">Fully Responsive</span>
-                        </div>
-                        <div class="d-flex align-items-center gap-3">
-                            <div class="feature-item-icon bg-primary bg-opacity-10 text-primary">
-                                <i class="bi bi-code-slash"></i>
-                            </div>
-                            <span class="fw-semibold">Clean Code Structure</span>
-                        </div>
+                    <div class="hero-logo-card p-5 bg-white rounded-4 shadow-sm border">
+                        <img src="{{ asset('img/Laravel Framework Logo White Mode Pin.jpg') }}"
+                            alt="Laravel Framework Logo"
+                            loading="eager">
                     </div>
                 </div>
             </div>
@@ -255,16 +296,6 @@
                         <p class="text-muted mb-0">
                             Stores users, audit trails, notifications, and other data needed by the dashboard and auth
                             flow.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="stack-usage-card">
-                        <div class="stack-usage-icon"><i class="bi bi-lightning-charge"></i></div>
-                        <h4 class="fw-bold mb-2">Vite</h4>
-                        <p class="text-muted mb-0">
-                            Supports the frontend build workflow, asset bundling, and development server for project CSS
-                            and JavaScript.
                         </p>
                     </div>
                 </div>
