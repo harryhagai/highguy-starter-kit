@@ -1,3 +1,4 @@
+<img width="2560" height="1600" alt="Screenshot 2026-04-26 215751" src="https://github.com/user-attachments/assets/0f6be489-1a67-40d3-baa1-fa96077048c1" />
 # HighGuy_37 Starter Kit
 
 HighGuy_37 Starter Kit is a Laravel starter project built for students and developers who want a clean foundation for small to medium web applications. It includes custom authentication, public pages, a protected dashboard, profile pages, notification routes, and reusable Blade layouts styled with Bootstrap and custom CSS.
@@ -134,8 +135,15 @@ This project is not using Laravel Breeze or Jetstream.
 This project uses the MIT license. See [LICENSE](LICENSE) for details.
 
 ## Developer
-
 Built and maintained by Hagai Harold Ngobey.
 
 - GitHub: <https://github.com/harryhagai>
 - Email: hngobey@gmail.com
+
+<img width="2560" height="1600" alt="Screenshot 2026-04-26 215736" src="https://github.com/user-attachments/assets/3449e40c-ff4e-4088-8ccb-7d622d0ce897" />
+<img width="2560" height="1600" alt="Screenshot 2026-04-26 215701" src="https://github.com/user-attachments/assets/b52c2a49-a8a2-40f0-a96d-5484ceb3bf71" />
+<img width="2560" height="1600" alt="Screenshot 2026-04-26 215634" src="https://github.com/user-attachments/assets/d9f6d76a-3d0a-49e5-b83a-852235b4574e" />
+<img width="2560" height="1600" alt="Screenshot 2026-04-26 215832" src="https://github.com/user-attachments/assets/a590967b-1145-421d-bb47-61747cf72337" />
+<img width="2560" height="1600" alt="Screenshot 2026-04-26 215815" src="https://github.com/user-attachments/assets/a61352e4-efd8-4a00-81d1-6469bbe993af" />
+<img width="2560" height="1600" alt="Screenshot 2026-04-26 215806" src="https://github.com/user-attachments/assets/3d637a28-05a6-4b56-872c-e9f05a5b1776" />
+
